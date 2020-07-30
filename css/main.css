@@ -78,10 +78,31 @@ header .inner{
 }
 header .menu-group{
     display: flex;
+    align-items: center;
+    height: 100%;
+
 }
 header .logo{
-
+    margin: 10px;
+}
+header .logo a{
+    background: url("../img/logo.svg");
+    width: 32px;
+    height: 32px;
+    display: block;
+    /* html에 img태그를 사용해도 되지만 css백그라운드로 text-indent를 사용하면 html에 대체
+     * 텍스트를 사용 한것처럼 사용 할 수 있다. 
+     */
+    text-indent: -9999px; 
+}
+header .logo a:hover{
+    background: url(../img/logo_on.svg);
 }
 header .main-menu{
     display: flex;
+}
+header .main-menu li a{
+    display: block;
+    padding: 10px;
+    color: #3c4146;
 }
