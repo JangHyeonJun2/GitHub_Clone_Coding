@@ -82,6 +82,37 @@ color: #cacaca;
 .float--right{
     float: right;
 }
+
+/* SUMMARY */
+.summary{
+
+}
+
+.summary__title{
+    font-size: 38px;
+    font-weight: 300px;
+    line-height: 1.25;
+    margin-bottom: 18px; 
+}
+
+.summary__description{
+    font-size: 26px;
+    font-weight: 300px;
+    color: #767676;
+    line-height: 1.5;
+}
+
+/* SECTION & INNER */
+.section{
+    position: relative;
+}
+.section .inner{
+    /* section안에 있는 모든 inner클래스에다가 적용된다. */
+    max-width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
 /* HEADE */
 header{
     border-bottom: 1px solid rgba(0, 0, 0, .75);
@@ -89,9 +120,7 @@ header{
     background: #fff;
 }
 header .inner{
-    max-width: 980px;
     height: 78px;
-    margin: 0 auto;
 }
 header .menu-group{
     display: flex;
@@ -131,6 +160,7 @@ header .sign-group{
     align-items: center;
     height: 100%;
 }
+/* order의 숫자가 높을수록 뒤로 밀려난다. */
 header .btn-group{
     order: 2;
     display: flex;
@@ -163,3 +193,39 @@ header .sub-menu li a{
 header .sub-menu li a:hover{
     color: #4078c0;
 }
+
+/* VISUAL */
+.section--visual{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+.section--visual::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+.section--visual .inner{
+    padding: 160px 0;
+}
+
+.section--visual .summary__title{
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25), 
+                 0 1px 25px rgba(0,0,0,.75);
+}
+
+.section--visual .summary__description{
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25), 
+                0 1px 25px rgba(0,0,0,.75);
+                
+}
+dfjkhkds
