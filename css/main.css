@@ -297,3 +297,29 @@ header .sub-menu li a:hover{
     width: 100%;
     height: 100%;
 }
+
+/* TILES */
+.section--feature .tiles{
+
+}
+.section--feature .tiles ul{
+
+}
+.section--feature .tiles li{
+
+}
+.section--feature .tiles li img{
+    max-width: 100%;
+    padding: 14px 10% 24px;/*위 좌우 아래*/
+    box-sizing: border-box;
+}
+.section--feature .tiles li h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.section--feature .tiles li p{
+    font-size: 14px;
+    color: #767676;
+}
