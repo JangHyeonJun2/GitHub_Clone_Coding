@@ -435,5 +435,8 @@ footer .logo{
 
 }
 footer .logo:hover svg{
+    /* 위에 선택자를 해석하면 footer태그에
+       logo클래스에 마우스를 올리면 svg파일이 
+       fill속성으로 해놓은 색상으로 나온다. */
     fill: #4078c0;
 }
