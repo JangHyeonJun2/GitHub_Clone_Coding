@@ -414,3 +414,26 @@ footer .site-links li a:hover{
     /* 밑줄치기 */
     text-decoration: underline; 
 }
+footer .logo{
+    /* 위에 SECTION & INNER부분에 보면 position이 relative라고
+       선언이 되어있다. logo의 부모를 보면 inner클래스 인데 inner는 
+       또한 section클래스의 자식요소이기 때문에 .section .relative선택자
+       를 봐야한다... */
+    position: absolute;
+    
+    /* 밑에 코드는 가운데 정렬이 아니라 가운데 배치이다.
+       그리고 width와 height길이는 logo클래스에 svg코드를 보면
+       width와 height길이가 나와있는데 그것을 확인해서 
+       넣어주면 된다. */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+
+}
+footer .logo:hover svg{
+    fill: #4078c0;
+}
