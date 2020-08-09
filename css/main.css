@@ -113,7 +113,7 @@ color: #cacaca;
     box-sizing: border-box;
     position: relative;
 }
-/* HEADE */
+/* HEADER */
 header{
     border-bottom: 1px solid rgba(0, 0, 0, .75);
     box-shadow: 0 0 5px rgba(0, 0, 0, .75);
@@ -439,4 +439,40 @@ footer .logo:hover svg{
        logo클래스에 마우스를 올리면 svg파일이 
        fill속성으로 해놓은 색상으로 나온다. */
     fill: #4078c0;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1024px){
+    header.section .inner{
+        max-width: none;
+        height: auto;
+        padding: 0 20px;
+    }
+    /*
+     * 다중 선택자
+     */
+    header .menu-group, 
+    header .sign-group{
+        float: none;
+    }
+
+    header .toggle{
+        display: none;
+    }
+    /* header .logo{
+        padding: 12px 0;
+    } */
+    #toggle-btn{
+        background: url("../img/toggle-btn.svg");
+        width: 18px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        cursor: pointer;
+        text-indent: -9999px;
+    }
+
 }

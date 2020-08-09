@@ -37,3 +37,4 @@
 | orientation | 뷰포트 방향(portrait, landscape) |
 | 기타        | 다른 특성들                      |
 
+보기
